@@ -122,7 +122,7 @@ Note the email should correspond to the one you used to sign up for github.
 
 We now have created a local git repo.
 
-1. Click on the terminal window and type `git status`, you will see our current work is up to dat.
+1. Click on the terminal window and type `git status`, you will see our current work is up to date.
 
 2. Now click on README.md in the file pane and add a new line that says, "modified in R Studio" and save this file.
 
