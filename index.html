@@ -477,12 +477,11 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </section>
 <section id="demo-overview" class="slide level2">
 <h2>Demo Overview:</h2>
-<p>Here are 6 basic steps to set up Github to interface with R Studio.</p>
+<p>Here are 5 basic steps to set up Github to interface with R Studio.</p>
 <ol type="1">
 <li class="fragment">Github account</li>
 <li class="fragment">Upgrade R and R Studio</li>
 <li class="fragment">Git installation and initialization</li>
-<li class="fragment">Git GUI??</li>
 <li class="fragment">Git - to - Github with R Studio</li>
 <li class="fragment">Basic Git Commands</li>
 </ol>
@@ -498,7 +497,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section id="r-and-r-studio-updates" class="slide level2">
 <h2>R and R Studio Updates</h2>
 <ul>
-<li class="fragment"><p>R is currently on version 4.1.1, if your version is much older than this (3.X.X), you will want to update it <a href="https://cloud.r-project.org">here</a>.</p></li>
+<li class="fragment"><p>R is currently on version 4.2.1, if your version is much older than this (3.X.X), you will want to update it <a href="https://cloud.r-project.org">here</a>.</p></li>
 <li class="fragment"><p>Updating R can be a bit painful, but keeping current is good practice.</p></li>
 <li class="fragment"><p>R Studio is constantly adding improvements and updates, including a git interface.</p></li>
 <li class="fragment"><p>To stay current, consider downloading the <a href="https://www.rstudio.com/products/rstudio/download/preview/">Preview version</a> and updating at the start of every semester.</p></li>
@@ -515,16 +514,6 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <pre><code>git config --global user.name &#39;First Last&#39;
 git config --global user.email &#39;who@montana.edu&#39;</code></pre>
 <p>Note the email should correspond to the one you used to sign up for github.</p>
-</section>
-<section id="git-gui" class="slide level2">
-<h2>Git GUI</h2>
-<ul>
-<li class="fragment"><p>If you are leery of using the command line, now that R Studio has a nice interface with Git that includes point and click options.</p></li>
-<li class="fragment"><p>Otherwise, GitHub has a desktop options are options are:</p>
-<ul>
-<li class="fragment"><a href="https://desktop.github.com">github desktop</a></li>
-</ul></li>
-</ul>
 </section>
 <section id="git---to---github-with-r-studio-1" class="slide level2">
 <h2>Git - to - Github with R Studio: 1</h2>
@@ -630,14 +619,52 @@ git config --global user.email &#39;who@montana.edu&#39;</code></pre>
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
+        // Display the page number of the current slide
+        slideNumber: false,
         // Push each slide change to the browser history
         history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
         // Vertical centering of slides
         center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Loop the presentation
+        loop: false,
+        // Change the presentation direction to be RTL
+        rtl: false,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
         // Transition style
         transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
         // Transition style for full page slide backgrounds
         backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
 
 
 

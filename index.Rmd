@@ -34,14 +34,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Demo Overview:
 
-Here are 6 basic steps to set up Github to interface with R Studio.
+Here are 5 basic steps to set up Github to interface with R Studio.
 
 1. Github account
 2. Upgrade R and R Studio
 3. Git installation and initialization
-4. Git GUI??
-5. Git - to - Github with R Studio
-6. Basic Git Commands
+4. Git - to - Github with R Studio
+5. Basic Git Commands
 
 
 ## Github Account
@@ -54,7 +53,7 @@ Here are 6 basic steps to set up Github to interface with R Studio.
 
 ## R and R Studio Updates
 
-- R is currently on version 4.1.1, if your version is much older than this (3.X.X), you will want to update it [here](https://cloud.r-project.org).
+- R is currently on version 4.2.1, if your version is much older than this (3.X.X), you will want to update it [here](https://cloud.r-project.org).
 
 - Updating R can be a bit painful, but keeping current is good practice.
 
@@ -77,13 +76,6 @@ git config --global user.email 'who@montana.edu'
 ```
 Note the email should correspond to the one you used to sign up for github.
 
-## Git GUI
-
-- If you are leery of using the command line, now that R Studio has a nice interface with Git that includes point and click options. 
-
-- Otherwise, GitHub has a desktop options are options are:
-    - [github desktop](https://desktop.github.com)
-    
 
 
 ## Git - to - Github with R Studio: 1
